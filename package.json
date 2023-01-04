@@ -1,0 +1,12 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "Project for class cse341",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node app.js"
+  },
+  "author": "Tanner Robinson",
+  "license": "ISC"
+}
