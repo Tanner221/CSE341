@@ -2,11 +2,11 @@
   "name": "cse341",
   "version": "1.0.0",
   "description": "Project for class cse341",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "test",
-    "start-dev": "node index.js",
-    "start": "nodemon index.js"
+    "start-dev": "nodemon server.js",
+    "start": "node server.js"
   },
   "author": "Tanner Robinson",
   "license": "ISC",
