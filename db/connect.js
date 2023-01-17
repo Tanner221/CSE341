@@ -7,17 +7,18 @@ const mongoURL = process.env.MONGODB_URL;
 
 let _db;
 
-const initDb = callback => {
+const initDb = (callback) => {
   if (_db) {
     console.log('Db is already initialized!');
     return callback(null, _db);
   }
-  mongoClient.connect(mongoURL)
-    .then(client => {
+  mongoClient
+    .connect(mongoURL)
+    .then((client) => {
       _db = client;
       callback(null, _db);
     })
-    .catch(err => {
+    .catch((err) => {
       callback(err);
     });
 };
