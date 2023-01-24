@@ -9,7 +9,8 @@
     "start": "node server.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix",
-    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc"
+    "format": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
+    "swagger": "node ./swagger.js"
   },
   "author": "Tanner Robinson",
   "license": "ISC",
@@ -17,12 +18,14 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongodb": "^4.13.0",
-    "nodemon": "^2.0.20"
+    "nodemon": "^2.0.20",
+    "swagger-ui-express": "^4.6.0"
   },
   "devDependencies": {
     "eslint": "^8.32.0",
     "eslint-config-prettier": "^8.6.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "prettier": "^2.8.3"
+    "prettier": "^2.8.3",
+    "swagger-autogen": "^2.22.0"
   }
 }
